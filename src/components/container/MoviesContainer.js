@@ -17,14 +17,6 @@ export class MoviesContainer extends Component {
         : null;
     return <div className="row">
       {content}
-      <button class="openbtn" onclick={openNav()}>Open Sidebar</button> 
-      <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick={closeNav}>×</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-      </div>
     </div>;
   }
 }
@@ -37,7 +29,7 @@ export class MoviesContainer extends Component {
 // const closeNav = ()=>{
 //   document.getElementById("mySidebar").style.width = "0";
 //   document.getElementById("main").style.marginLeft= "0";
-}
+// }
 
 const mapStateToProps = state => ({
   movies: state.movies.movies
